@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArchiNova</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <header>
       <!-- NAVIGATION-->
-      <nav class="w-full bg-white">
+      <nav
+        class="w-full bg-white shadow-slate-200 shadow-sm fixed z-50 top-0 left-0"
+      >
         <div
-          class="min-[1025px]:flex justify-between w-full mt-4 h-20 px-4 mb-10"
+          class="min-[1057px]:flex justify-between w-full mt-4 h-20 px-4 mb-4 max-[1057px]:pt-3"
         >
           <div class="flex items-center justify-between">
-            <img
-              class="w-20 ml-5"
-              src="img/—Pngtree—sydney opera house logo -_5044781.png"
-              alt=""
-            />
+            <a href=""
+              ><img
+                class="w-35 h-20 text-center ml-5 object-fit cursor-pointer hover:brightness-200"
+                src="img/Group 2.png"
+                alt=""
+            /></a>
             <svg
               id="menuToggle"
-              class="border-2 border-gray-200 rounded-xl bg-white mr-5 cursor-pointer min-[1025px]:hidden"
+              class="border-2 border-gray-200 rounded-xl bg-white mr-5 cursor-pointer min-[1057px]:hidden"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
               width="50px"
@@ -62,69 +65,37 @@
             </svg>
           </div>
 
-          <div id="mobileMenu" class="hidden">
-            <div
-              class="w-[300px] h-[100vh] flex flex-col justify-center items-center gap-10 z-100 bg-blue-300 absolute top-[0rem] left-[0rem]"
-            >
-              <a
-                class="text-[1.5rem] bg-white shadow-md rounded-lg py-2 px-6 text-sm"
-                href=""
-                >About</a
-              >
-              <a
-                class="text-[1.5rem] bg-white shadow-md py-2 px-6 rounded-lg text-sm"
-                href=""
-                >Projects</a
-              >
-              <a
-                class="text-[1.5rem] bg-white shadow-md py-2 px-6 rounded-lg text-sm"
-                href=""
-                >From</a
-              >
-              <a
-                class="text-[1.5rem] bg-white shadow-md py-2 px-6 rounded-lg text-sm"
-                href=""
-                >Design</a
-              >
-              <a
-                class="text-[1.5rem] bg-white shadow-md py-2 px-6 rounded-lg text-sm"
-                href=""
-                >Storage</a
-              >
-              <a
-                class="text-[1.5rem] bg-white shadow-md py-2 px-2 rounded-full"
-                href=""
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20px"
-                  height="20px"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <g id="Interface / Search_Magnifying_Glass">
-                    <path
-                      id="Vector"
-                      d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z"
-                      stroke="#000000"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </svg>
-              </a>
-            </div>
-          </div>
           <div
-            class="hidden lg:flex gap-7 justify-center items-center text-sm border-1 border-gray-100 py-4 px-4 rounded-full shadow-sm"
+            class="hidden max-[1057px]:hidden min-[1057px]:flex gap-7 justify-center items-center text-sm border-1 border-black py-4 px-4 rounded-full"
           >
-            <a class="py-2 px-6 text-[1rem] font-semibold" href="">About</a>
-            <a class="py-2 px-6 text-[1rem] font-semibold" href="">Projects</a>
-            <a class="py-2 px-6 text-[1rem] font-semibold" href="">From</a>
-            <a class="py-2 px-6 text-[1rem] font-semibold" href="">Design</a>
-            <a class="py-2 px-6 text-[1rem] font-semibold" href="">Storage</a>
-            <a class="shadow-md py-2 px-2 rounded-full" href=""
+            <a
+              class="py-2 px-6 text-[1rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+              href=""
+              >About</a
+            >
+            <a
+              class="py-2 px-6 text-[1rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+              href=""
+              >Projects</a
+            >
+            <a
+              class="py-2 px-6 text-[1rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+              href=""
+              >From</a
+            >
+            <a
+              class="py-2 px-6 text-[1rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+              href=""
+              >Design</a
+            >
+            <a
+              class="py-2 px-6 text-[1rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+              href=""
+              >Storage</a
+            >
+            <a
+              class="shadow-md py-2 px-2 rounded-full hover:bg-gray-100 hover:scale-125 transition"
+              href=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20px"
@@ -145,16 +116,18 @@
               </svg>
             </a>
           </div>
-          <div class="hidden lg:flex justify-center items-center gap-5 text-sm">
+          <div
+            class="hidden max-[1057px]:hidden min-[1057px]:flex justify-center items-center gap-6 text-sm"
+          >
             <a
-              class="border-1 bg-black text-white hover:bg-white hover:text-black hover:border-red-100 font-bold py-2 px-6 rounded-full transition"
+              class="block text-black font-bold border-b-2 border-transparent hover:border-black transition"
               href=""
-              >Button</a
+              >Contact Us Now</a
             >
             <a
-              class="border-1 bg-black text-white hover:bg-white hover:text-black font-bold py-2 px-6 rounded-full transition"
+              class="text-black font-bold border-b-2 border-transparent hover:border-black transition"
               href=""
-              >Button</a
+              >See Properties</a
             >
           </div>
         </div>
@@ -163,10 +136,10 @@
     <main class="px-5">
       <!-- SECTION HERO -->
       <section
-        class="bg-gradient-to-r from-[#e8f5fa] to-[#fff0e3] rounded-3xl relative min-[1200px]:grid min-[1200px]:grid-cols-[40%_60%]"
+        class="bg-gradient-to-r from-[#e8f5fa] to-[#fff0e3] rounded-3xl relative min-[1200px]:grid min-[1200px]:grid-cols-[40%_60%] mt-[10rem]"
       >
         <div
-          class="max-[1025px]:flex max-[1025px]:flex-col max-[1025px]:justify-center min-[1050px]:content-center px-10 pt-15 pb-2"
+          class="max-[1025px]:flex max-[1025px]:flex-col max-[1025px]:justify-center min-[1050px]:content-center px-10 pt-20 pb-2"
         >
           <h2 class="text-[1.4rem] font-[500]">Welcome to ArchiNova</h2>
           <h1
@@ -188,14 +161,14 @@
               <div class="relative mb-10">
                 <input
                   class="w-full h-14 rounded-full pl-3 pr-36 border border-white bg-white focus:outline-none focus:ring-1 focus:ring-black 2xl:w-full"
-                  placeholder="Write Here..."
+                  placeholder="Write Here Your Favourite Location..."
                   type="text"
                   id=""
                   name=""
                   maxlength="30"
                 />
                 <button
-                  class="absolute right-1 top-1 bottom-1 bg-black text-white font-bold px-8 rounded-full hover:bg-white hover:text-black transition"
+                  class="absolute right-1 top-1 bottom-1 bg-black text-white font-bold px-8 rounded-full hover:bg-white hover:text-black transition cursor-pointer"
                 >
                   Submit Here
                 </button>
@@ -216,16 +189,16 @@
             Lorem ipsum dolor sit amet consectetur
           </h3>
           <h2
-            class="font-bold mt-[1rem] mb-[2rem] leading-10 tracking-tight text-center max-[1025px]:text-[1.5rem] min-[1025px]:text-[2rem]"
+            class="font-bold mt-[1rem] mb-[2rem] leading-10 tracking-tight text-center max-[1025px]:text-[1.2rem] min-[1025px]:text-[2rem]"
           >
             <span
-              class="text-blue-300 line-clamp-7 max-[1025px]:text-[3rem] max-[1025px]:font-[700] min-[1025px]:text-[4rem] min-[1025px]:leading-18"
+              class="text-blue-300 line-clamp-7 max-[1025px]:text-[2.5rem] max-[1025px]:leading-17 max-[1025px]:font-[700] min-[1025px]:text-[4rem] min-[1025px]:leading-20"
               >Everything</span
             >
             should be this easy
           </h2>
         </div>
-        <div class="flex flex-col gap-20 justify-center mt-[3rem]">
+        <div class="flex max-[1025px]:flex-col gap-20 justify-center mt-[3rem]">
           <div class="flex flex-col">
             <svg
               class="m-auto"
@@ -246,10 +219,11 @@
               Answer questions
             </h3>
             <p
-              class="text-center max-[1025px]:text-[1.2rem] max-[1025px]:font-[500] min-[1025px]:text-[1.2rem]"
+              class="text-center max-[1025px]:text-[1rem] max-[1025px]:font-[400] min-[1025px]:text-[1.2rem]"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate facere corrupti qui orrupti qui orrupti qui
+              Cupiditate facere corrupti qui orrupti qui orrupti qui Cupiditate
+              facere corrupti qui orrupti qui orrupti qui
             </p>
           </div>
           <div>
@@ -272,10 +246,11 @@
               Select quote
             </h3>
             <p
-              class="text-center max-[1025px]:text-[1.2rem] max-[1025px]:font-[500] min-[1025px]:text-[1.2rem]"
+              class="text-center max-[1025px]:text-[1rem] max-[1025px]:font-[400] min-[1025px]:text-[1.2rem]"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate facere corrupti qui orrupti qui orrupti qui
+              Cupiditate facere corrupti qui orrupti qui orrupti qui Cupiditate
+              facere corrupti qui orrupti qui orrupti qui
             </p>
           </div>
           <div>
@@ -298,10 +273,11 @@
               Get Registered
             </h3>
             <p
-              class="text-center max-[1025px]:text-[1.2rem] max-[1025px]:font-[500] min-[1025px]:text-[1.2rem]"
+              class="text-center max-[1025px]:text-[1rem] max-[1025px]:font-[400] min-[1025px]:text-[1.2rem]"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate facere corrupti qui orrupti qui orrupti qui
+              Cupiditate facere corrupti qui orrupti qui orrupti qui Cupiditate
+              facere corrupti qui orrupti qui orrupti qui
             </p>
           </div>
         </div>
@@ -310,10 +286,12 @@
       <!-- SECTION CARD -->
       <section class="">
         <div class="flex flex-col">
-          <div class="flex flex-col gap-10">
-            <h2 class="text-[2.1rem] font-bold tracking-tighter">
-              <span class="text-[2.5rem] text-blue-300">TOP</span> Built
-              Projects :
+          <div class="flex flex-col gap-15">
+            <h2 class="text-[2rem] font-semibold">
+              <span class="rounded-md text-[2.5rem] font-bold text-blue-300">
+                TOP</span
+              >
+              Built Projects :
             </h2>
 
             <!--CARDS -->
@@ -700,9 +678,9 @@
     </main>
     <main class="w-full px-4 sm:px-6 md:px-12 py-12">
       <!-- INTRO SECTION -->
-      <section class="max-w-7xl mx-auto text-gray-800 mb-16">
+      <section class="max-w-7xl mx-auto text-gray-800 mb-16 mt-20">
         <h4
-          class="text-3xl md:text-4xl font-bold mb-6 leading-tight text-center"
+          class="text-3xl md:text-4xl font-bold mb-20 leading-tight text-center"
         >
           We are a global, <br class="md:hidden" />
           boutique real estate brokerage
