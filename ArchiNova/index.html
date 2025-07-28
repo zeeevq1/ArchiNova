@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <title>ArchiNova</title>
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
@@ -118,35 +117,15 @@
               </a>
             </div>
           </div>
-          <div class="hidden lg:flex gap-7 justify-center items-center text-sm">
-            <a
-              class="border-1 border-gray-200 shadow-md rounded-lg text-sm md:py-1 md:px-4 lg:py-2 lg:px-6"
-              href=""
-              >About</a
-            >
-            <a
-              class="border-1 border-gray-200 shadow-md py-2 px-6 rounded-lg text-sm"
-              href=""
-              >Projects</a
-            >
-            <a
-              class="border-1 border-gray-200 shadow-md py-2 px-6 rounded-lg text-sm"
-              href=""
-              >From</a
-            >
-            <a
-              class="border-1 border-gray-200 shadow-md py-2 px-6 rounded-lg text-sm"
-              href=""
-              >Design</a
-            >
-            <a
-              class="border-1 border-gray-200 shadow-md py-2 px-6 rounded-lg text-sm"
-              href=""
-              >Storage</a
-            >
-            <a
-              class="border-1 border-gray-200 shadow-md py-2 px-2 rounded-full"
-              href=""
+          <div
+            class="hidden lg:flex gap-7 justify-center items-center text-sm border-1 border-gray-100 py-4 px-4 rounded-full shadow-sm"
+          >
+            <a class="py-2 px-6 text-[1rem] font-semibold" href="">About</a>
+            <a class="py-2 px-6 text-[1rem] font-semibold" href="">Projects</a>
+            <a class="py-2 px-6 text-[1rem] font-semibold" href="">From</a>
+            <a class="py-2 px-6 text-[1rem] font-semibold" href="">Design</a>
+            <a class="py-2 px-6 text-[1rem] font-semibold" href="">Storage</a>
+            <a class="shadow-md py-2 px-2 rounded-full" href=""
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20px"
@@ -169,12 +148,12 @@
           </div>
           <div class="hidden lg:flex justify-center items-center gap-5 text-sm">
             <a
-              class="border-2 shadow-md border-gray-100 py-2 px-6 rounded-full"
+              class="border-1 bg-black text-white hover:bg-white hover:text-black font-bold py-2 px-6 rounded-full transition"
               href=""
               >Button</a
             >
             <a
-              class="border-2 shadow-md border-gray-100 py-2 px-6 rounded-full text-sm"
+              class="border-1 bg-black text-white hover:bg-white hover:text-black font-bold py-2 px-6 rounded-full transition"
               href=""
               >Button</a
             >
@@ -721,291 +700,284 @@
       </section>
     </main>
     <main
-      class="min-h-screen bg-gradient-to-b from-pink-200 via-blue-200 to-purple-300 px-4 md:px-0"
+      class="w-full bg-gradient-to-b from-pink-200 via-blue-200 to-purple-300 px-4 md:px-0"
     >
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row">
-        <!-- LEFT COLUMN -->
-        <div class="hidden md:block md:w-1/2 bg-transparent"></div>
+      <div class="w-full bg-white px-6 md:px-12 py-16 text-gray-800">
+        <!-- INTRO -->
+        <h4
+          class="text-3xl md:text-4xl font-bold mb-4 leading-tight text-center"
+        >
+          We are a global, <br />
+          boutique real estate brokerage
+        </h4>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <p class="text-base md:text-lg text-gray-600 mb-6">
+              In the United States, the transfer and acquisition of real estate
+              is a process that involves the legal transfer of property
+              ownership from one party to another.
+            </p>
+            <div class="flex flex-wrap gap-4 text-sm text-gray-600 mb-6">
+              <div class="flex flex-col">
+                <span class="text-xl font-bold text-gray-800">50+</span>
+                <span>Properties Listed</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xl font-bold text-gray-800">20+</span>
+                <span>Years Experience</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-xl font-bold text-gray-800">100%</span>
+                <span>Client Satisfaction</span>
+              </div>
+            </div>
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm transition"
+            >
+              Get Started
+            </button>
+          </div>
+          <div>
+            <div
+              class="bg-gray-200 w-full h-64 md:h-80 rounded-lg flex items-center justify-center"
+            >
+              <img
+                src="./images/team.jfif"
+                alt="team"
+                class="object-cover w-full h-full rounded-lg"
+              />
+            </div>
+          </div>
+        </section>
 
-        <!-- RIGHT COLUMN -->
-        <div class="w-full md:w-1/2 bg-white px-6 md:px-12 py-16 text-gray-800">
-          <!-- INTRO -->
-          <h4
-            class="text-3xl md:text-4xl font-bold mb-4 leading-tight text-center"
+        <!-- FEATURES -->
+        <section class="mt-16">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Feature Cards -->
+            <!-- ... feature cards content (unchanged) ... -->
+            <div
+              class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+            >
+              <div
+                class="bg-gray-200 w-14 h-14 rounded-full flex items-center justify-center mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 9.75L12 3l9 6.75M4.5 10.5v9.75a.75.75 0 00.75.75H9.75v-6h4.5v6h4.5a.75.75 0 00.75-.75V10.5"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold">Your Home</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Secure and insure your home with our premium packages.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+            >
+              <div
+                class="bg-gray-200 w-14 h-14 rounded-full flex items-center justify-center mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M3 3.75A.75.75 0 013.75 3h16.5a.75.75 0 01.75.75V6a.75.75 0 01-.75.75H3.75A.75.75 0 013 6V3.75zM4.5 6.75h15v12a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75v-12z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold">Your Belongings</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Protect your valuables with tailored coverage solutions.
+              </p>
+            </div>
+            <div
+              class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
+            >
+              <div
+                class="bg-gray-200 w-14 h-14 rounded-full flex items-center justify-center mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 3c2.485 1.099 4.724 1.648 7.125 1.887.22.023.375.21.375.432v6.33c0 4.514-3.38 8.782-7.125 9.975-3.745-1.193-7.125-5.461-7.125-9.975v-6.33c0-.222.155-.409.375-.432A23.793 23.793 0 0112 3z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M12 11.25v2.25m0 3.75h.007v.008H12v-.008z"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg font-semibold">Personal Liability</h3>
+              <p class="text-sm text-gray-600 mt-2">
+                Stay safe from the unexpected with personal liability coverage.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section class="mt-16">
+          <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">
+            Read our latest blogs
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Blog cards (unchanged) -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="bg-gray-200 h-40">
+                <img src="./images/download.jfif" alt="" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg mb-2">
+                  How to choose your dream home
+                </h3>
+                <p class="text-sm text-gray-600">
+                  Tips and tricks for finding the perfect real estate match.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="bg-gray-200 h-40">
+                <img src="./images/download (1).jfif" alt="" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg mb-2">
+                  Real estate trends in 2026
+                </h3>
+                <p class="text-sm text-gray-600">
+                  A look at what's coming next in housing and architecture.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="bg-gray-200 h-40">
+                <img src="./images/download (2).jfif" alt="" />
+              </div>
+              <div class="p-4">
+                <h3 class="font-semibold text-lg mb-2">
+                  Interior design for minimalists
+                </h3>
+                <p class="text-sm text-gray-600">
+                  Creating calm spaces with simple layouts and natural tones.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION - FIXED -->
+        <section class="relative w-full h-64 mt-16">
+          <img
+            src="./images/images.jfif"
+            alt="Newsletter background"
+            class="absolute inset-0 w-full h-full object-cover rounded-md"
+          />
+          <div class="absolute inset-0 bg-black/40 rounded-md"></div>
+          <div
+            class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"
           >
-            We are a global, <br />
-            boutique real estate brokerage
-          </h4>
-          <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p class="text-base md:text-lg text-gray-600 mb-6">
-                In the United States, the transfer and acquisition of real
-                estate is a process that involves the legal transfer of property
-                ownership from one party to another.
-              </p>
-              <div class="flex flex-wrap gap-4 text-sm text-gray-600 mb-6">
-                <div class="flex flex-col">
-                  <span class="text-xl font-bold text-gray-800">50+</span>
-                  <span>Properties Listed</span>
-                </div>
-                <div class="flex flex-col">
-                  <span class="text-xl font-bold text-gray-800">20+</span>
-                  <span>Years Experience</span>
-                </div>
-                <div class="flex flex-col">
-                  <span class="text-xl font-bold text-gray-800">100%</span>
-                  <span>Client Satisfaction</span>
-                </div>
-              </div>
-              <button
-                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm transition"
-              >
-                Get Started
-              </button>
-            </div>
-            <div>
-              <div
-                class="bg-gray-200 w-full h-64 md:h-80 rounded-lg flex items-center justify-center"
-              >
-                <img
-                  src="./images/team.jfif"
-                  alt="team"
-                  class="object-cover w-full h-full rounded-lg"
-                />
-              </div>
-            </div>
-          </section>
-
-          <!-- FEATURES -->
-          <section class="mt-16">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              <!-- Feature Cards -->
-              <!-- ... feature cards content (unchanged) ... -->
-              <div
-                class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-              >
-                <div
-                  class="bg-gray-200 w-14 h-14 rounded-full flex items-center justify-center mb-4"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 text-gray-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 9.75L12 3l9 6.75M4.5 10.5v9.75a.75.75 0 00.75.75H9.75v-6h4.5v6h4.5a.75.75 0 00.75-.75V10.5"
-                    />
-                  </svg>
-                </div>
-                <h3 class="text-lg font-semibold">Your Home</h3>
-                <p class="text-sm text-gray-600 mt-2">
-                  Secure and insure your home with our premium packages.
-                </p>
-              </div>
-              <div
-                class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-              >
-                <div
-                  class="bg-gray-200 w-14 h-14 rounded-full flex items-center justify-center mb-4"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 text-gray-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M3 3.75A.75.75 0 013.75 3h16.5a.75.75 0 01.75.75V6a.75.75 0 01-.75.75H3.75A.75.75 0 013 6V3.75zM4.5 6.75h15v12a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75v-12z"
-                    />
-                  </svg>
-                </div>
-                <h3 class="text-lg font-semibold">Your Belongings</h3>
-                <p class="text-sm text-gray-600 mt-2">
-                  Protect your valuables with tailored coverage solutions.
-                </p>
-              </div>
-              <div
-                class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center"
-              >
-                <div
-                  class="bg-gray-200 w-14 h-14 rounded-full flex items-center justify-center mb-4"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 text-gray-600"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M12 3c2.485 1.099 4.724 1.648 7.125 1.887.22.023.375.21.375.432v6.33c0 4.514-3.38 8.782-7.125 9.975-3.745-1.193-7.125-5.461-7.125-9.975v-6.33c0-.222.155-.409.375-.432A23.793 23.793 0 0112 3z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M12 11.25v2.25m0 3.75h.007v.008H12v-.008z"
-                    />
-                  </svg>
-                </div>
-                <h3 class="text-lg font-semibold">Personal Liability</h3>
-                <p class="text-sm text-gray-600 mt-2">
-                  Stay safe from the unexpected with personal liability
-                  coverage.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- BLOG SECTION -->
-          <section class="mt-16">
-            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">
-              Read our latest blogs
+            <h2 class="text-white text-2xl sm:text-3xl font-bold mb-4">
+              Subscribe to our newsletter
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              <!-- Blog cards (unchanged) -->
-              <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="bg-gray-200 h-40">
-                  <img src="./images/download.jfif" alt="" />
-                </div>
-                <div class="p-4">
-                  <h3 class="font-semibold text-lg mb-2">
-                    How to choose your dream home
-                  </h3>
-                  <p class="text-sm text-gray-600">
-                    Tips and tricks for finding the perfect real estate match.
-                  </p>
-                </div>
-              </div>
-              <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="bg-gray-200 h-40">
-                  <img src="./images/download (1).jfif" alt="" />
-                </div>
-                <div class="p-4">
-                  <h3 class="font-semibold text-lg mb-2">
-                    Real estate trends in 2026
-                  </h3>
-                  <p class="text-sm text-gray-600">
-                    A look at what's coming next in housing and architecture.
-                  </p>
-                </div>
-              </div>
-              <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <div class="bg-gray-200 h-40">
-                  <img src="./images/download (2).jfif" alt="" />
-                </div>
-                <div class="p-4">
-                  <h3 class="font-semibold text-lg mb-2">
-                    Interior design for minimalists
-                  </h3>
-                  <p class="text-sm text-gray-600">
-                    Creating calm spaces with simple layouts and natural tones.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- NEWSLETTER SECTION - FIXED -->
-          <section class="relative w-full h-64 mt-16">
-            <img
-              src="./images/images.jfif"
-              alt="Newsletter background"
-              class="absolute inset-0 w-full h-full object-cover rounded-md"
-            />
-            <div class="absolute inset-0 bg-black/40 rounded-md"></div>
-            <div
-              class="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"
+            <p class="text-gray-200 mb-6 max-w-md">
+              Get exclusive updates, new listings, and design tips every week.
+            </p>
+            <form
+              class="w-full max-w-md flex flex-col sm:flex-row sm:items-center sm:gap-4"
             >
-              <h2 class="text-white text-2xl sm:text-3xl font-bold mb-4">
-                Subscribe to our newsletter
-              </h2>
-              <p class="text-gray-200 mb-6 max-w-md">
-                Get exclusive updates, new listings, and design tips every week.
-              </p>
-              <form
-                class="w-full max-w-md flex flex-col sm:flex-row sm:items-center sm:gap-4"
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full px-4 py-2 rounded-md text-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <button
+                type="submit"
+                class="mt-3 sm:mt-0 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm transition"
               >
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  class="w-full px-4 py-2 rounded-md text-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <button
-                  type="submit"
-                  class="mt-3 sm:mt-0 w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm transition"
-                >
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          </section>
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </section>
 
-          <!-- MINI FOOTER -->
-          <footer class="bg-white py-10 mt-0 w-full">
-            <div
-              class="max-w-6xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-xs text-gray-700"
-            >
-              <div>
-                <h3 class="font-semibold mb-2 text-sm">ArchiNova</h3>
-                <p class="leading-relaxed">
-                  Global boutique real estate brokerage.<br />Luxury homes,
-                  personalized service.
-                </p>
-              </div>
-              <div>
-                <h3 class="font-semibold mb-2 text-sm">Company</h3>
-                <ul class="space-y-1">
-                  <li><a href="#" class="hover:underline">About us</a></li>
-                  <li><a href="#" class="hover:underline">Careers</a></li>
-                  <li><a href="#" class="hover:underline">Press</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 class="font-semibold mb-2 text-sm">Services</h3>
-                <ul class="space-y-1">
-                  <li><a href="#" class="hover:underline">Buying</a></li>
-                  <li><a href="#" class="hover:underline">Selling</a></li>
-                  <li><a href="#" class="hover:underline">Renting</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 class="font-semibold mb-2 text-sm">Support</h3>
-                <ul class="space-y-1">
-                  <li><a href="#" class="hover:underline">FAQs</a></li>
-                  <li><a href="#" class="hover:underline">Help Center</a></li>
-                  <li><a href="#" class="hover:underline">Contact us</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 class="font-semibold mb-2 text-sm">Contact</h3>
-                <ul class="space-y-1">
-                  <li><a href="#" class="hover:underline">Email</a></li>
-                  <li><a href="#" class="hover:underline">Phone</a></li>
-                  <li><a href="#" class="hover:underline">Live Chat</a></li>
-                </ul>
-              </div>
+        <!-- MINI FOOTER -->
+        <footer class="bg-white py-10 mt-0 w-full">
+          <div
+            class="max-w-6xl mx-auto px-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-xs text-gray-700"
+          >
+            <div>
+              <h3 class="font-semibold mb-2 text-sm">ArchiNova</h3>
+              <p class="leading-relaxed">
+                Global boutique real estate brokerage.<br />Luxury homes,
+                personalized service.
+              </p>
             </div>
-          </footer>
-
-          <!-- FINAL FOOTER -->
-          <footer class="bg-gray-800 text-white text-center py-6">
-            <p class="text-sm">&copy; 2025 ArchinoNova. All rights reserved.</p>
-          </footer>
-        </div>
+            <div>
+              <h3 class="font-semibold mb-2 text-sm">Company</h3>
+              <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">About us</a></li>
+                <li><a href="#" class="hover:underline">Careers</a></li>
+                <li><a href="#" class="hover:underline">Press</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2 text-sm">Services</h3>
+              <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">Buying</a></li>
+                <li><a href="#" class="hover:underline">Selling</a></li>
+                <li><a href="#" class="hover:underline">Renting</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2 text-sm">Support</h3>
+              <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">FAQs</a></li>
+                <li><a href="#" class="hover:underline">Help Center</a></li>
+                <li><a href="#" class="hover:underline">Contact us</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-semibold mb-2 text-sm">Contact</h3>
+              <ul class="space-y-1">
+                <li><a href="#" class="hover:underline">Email</a></li>
+                <li><a href="#" class="hover:underline">Phone</a></li>
+                <li><a href="#" class="hover:underline">Live Chat</a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
       </div>
     </main>
+    <!-- FINAL FOOTER -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+      <p class="text-sm">&copy; 2025 ArchinoNova. All rights reserved.</p>
+    </footer>
+    <!-- Tailwind CDN -->
   </body>
 </html>
