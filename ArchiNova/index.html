@@ -1,15 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ArchiNova</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="img/Group 2.png" type="logo-image" />
   </head>
   <body>
     <header>
+      <div class="fixed bottom-10 right-10 z-50">
+        <a class="cursor-pointer" onclick="window.scrollTo(0, 0)">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            width="60px"
+            height="60px"
+            viewBox="0 0 32 32"
+            version="1.1"
+          >
+            <title>arrow-up-circle</title>
+            <desc>Created with Sketch Beta.</desc>
+            <defs></defs>
+            <g
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+              fill="none"
+              fill-rule="evenodd"
+              sketch:type="MSPage"
+            >
+              <g
+                id="Icon-Set-Filled"
+                sketch:type="MSLayerGroup"
+                transform="translate(-362.000000, -1089.000000)"
+                fill="#000000"
+              >
+                <path
+                  d="M384.535,1105.54 C384.145,1105.93 383.512,1105.93 383.121,1105.54 L379,1101.41 L379,1112 C379,1112.55 378.553,1113 378,1113 C377.447,1113 377,1112.55 377,1112 L377,1101.41 L372.879,1105.54 C372.488,1105.93 371.854,1105.93 371.465,1105.54 C371.074,1105.14 371.074,1104.51 371.465,1104.12 L377.121,1098.46 C377.361,1098.22 377.689,1098.15 378,1098.21 C378.311,1098.15 378.639,1098.22 378.879,1098.46 L384.535,1104.12 C384.926,1104.51 384.926,1105.14 384.535,1105.54 L384.535,1105.54 Z M378,1089 C369.163,1089 362,1096.16 362,1105 C362,1113.84 369.163,1121 378,1121 C386.837,1121 394,1113.84 394,1105 C394,1096.16 386.837,1089 378,1089 L378,1089 Z"
+                  id="arrow-up-circle"
+                  sketch:type="MSShapeGroup"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <!--MOBILE MENU-->
+      <div
+        id="mobileMenu"
+        class="min-[1057px]:hidden fixed top-0 left-0 mt-20 w-full h-screen bg-white z-40 flex-col items-center justify-center gap-6 text-2xl transform transition-transform duration-700 ease-in-out -translate-y-full opacity-0 pointer-events-none"
+      >
+        <div class="flex flex-col text-center text-[2rem] gap-15">
+          <a
+            class="text-[2rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+            href=""
+            >About</a
+          >
+          <a
+            class="text-[2rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+            href=""
+            >Projects</a
+          >
+          <a
+            class="text-[2rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+            href=""
+            >From</a
+          >
+          <a
+            class="text-[2rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+            href=""
+            >Design</a
+          >
+          <a
+            class="text-[2rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
+            href=""
+            >Storage</a
+          >
+
+          <a
+            class="block text-black font-semibold border-b-2 border-transparent hover:border-black transition"
+            href=""
+            >Contact Us Now</a
+          >
+          <a
+            class="text-black font-semibold border-b-2 border-transparent hover:border-black transition"
+            href=""
+            >See Properties</a
+          >
+        </div>
+      </div>
       <!-- NAVIGATION-->
       <nav
+        id="scroll-beginning"
         class="w-full bg-white shadow-slate-200 shadow-sm fixed z-50 top-0 left-0"
       >
         <div
@@ -70,12 +154,12 @@
           >
             <a
               class="py-2 px-6 text-[1rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
-              href=""
+              href="#about"
               >About</a
             >
             <a
               class="py-2 px-6 text-[1rem] font-semibold text-black border-b-2 border-transparent hover:border-black transition"
-              href=""
+              href="#projects"
               >Projects</a
             >
             <a
@@ -121,7 +205,7 @@
           >
             <a
               class="block text-black font-bold border-b-2 border-transparent hover:border-black transition"
-              href=""
+              href="#newsletter"
               >Contact Us Now</a
             >
             <a
@@ -284,7 +368,7 @@
       </section>
 
       <!-- SECTION CARD -->
-      <section class="">
+      <section id="projects">
         <div class="flex flex-col">
           <div class="flex flex-col gap-15">
             <h2 class="text-[2rem] font-semibold">
@@ -678,7 +762,7 @@
     </main>
     <main class="w-full px-4 sm:px-6 md:px-12 py-12">
       <!-- INTRO SECTION -->
-      <section class="max-w-7xl mx-auto text-gray-800 mb-16 mt-20">
+      <section id="about" class="max-w-7xl mx-auto text-gray-800 mb-16 mt-20">
         <h4
           class="text-3xl md:text-4xl font-bold mb-20 leading-tight text-center"
         >
@@ -874,6 +958,7 @@
 
       <!-- NEWSLETTER SECTION -->
       <section
+        id="newsletter"
         class="relative w-full h-72 md:h-80 mb-16 rounded-lg overflow-hidden"
       >
         <img
@@ -959,5 +1044,6 @@
         <p class="text-sm">&copy; 2025 ArchinoNova. All rights reserved.</p>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
