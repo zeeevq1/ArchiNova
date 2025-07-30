@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" href="img/Group 2.png" type="logo-image" />
   </head>
-  <body>
+  <body id="pageBody" class=" text-gray-800 transition-colors duration-300"></body>>
     <header>
       <div class="fixed bottom-10 right-10 z-50">
         <a class="cursor-pointer" onclick="window.scrollTo(0, 0)">
@@ -108,7 +108,7 @@
             /></a>
             <svg
               id="menuToggle"
-              class="border-2 border-gray-200 rounded-xl bg-white mr-5 cursor-pointer min-[1057px]:hidden"
+              class=" border-gray-200 rounded-xl bg-white mr-5 cursor-pointer min-[1057px]:hidden hover:scale-90 transition"
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
               width="50px"
@@ -177,28 +177,21 @@
               href=""
               >Storage</a
             >
-            <a
-              class="shadow-md py-2 px-2 rounded-full hover:bg-gray-100 hover:scale-125 transition"
-              href=""
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20px"
-                height="20px"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <g id="Interface / Search_Magnifying_Glass">
-                  <path
-                    id="Vector"
-                    d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z"
-                    stroke="#000000"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            </a>
+                <button id="darkToggle" class=" left-40 z-50 w-8 h-8 rounded-lg hover:scale-125 transition cursor-pointer">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 24 24" version="1.1">
+    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+    <title>ic_fluent_dark_theme_24_filled</title>
+    <desc>Created with Sketch.</desc>
+    <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_fluent_dark_theme_24_filled" fill="#212121" fill-rule="nonzero">
+            <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,20 L12,4 C16.418278,4 20,7.581722 20,12 C20,16.418278 16.418278,20 12,20 Z" id="🎨-Color">
+
+</path>\+
+        </g>
+    </g>
+</svg>
+
+                </button>
           </div>
           <div
             class="hidden max-[1057px]:hidden min-[1057px]:flex justify-center items-center gap-6 text-sm"
@@ -251,7 +244,8 @@
                   name=""
                   maxlength="30"
                 />
-                <button
+
+                <button type="reset" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });"
                   class="absolute right-1 top-1 bottom-1 bg-black text-white font-bold px-8 rounded-full hover:bg-white hover:text-black transition cursor-pointer"
                 >
                   Submit Here
@@ -327,7 +321,7 @@
               />
             </svg>
             <h3 class="text-[1.5rem] font-bold mt-5 mb-9 text-center">
-              Select quote
+              We help you to find better solutions
             </h3>
             <p
               class="text-center max-[1025px]:text-[1rem] max-[1025px]:font-[400] min-[1025px]:text-[1.2rem]"
@@ -354,7 +348,7 @@
               />
             </svg>
             <h3 class="text-[1.5rem] font-bold mt-5 mb-9 text-center">
-              Get Registered
+              Call Center for <span class="text-blue-300">YOU</span> 24H
             </h3>
             <p
               class="text-center max-[1025px]:text-[1rem] max-[1025px]:font-[400] min-[1025px]:text-[1.2rem]"
@@ -380,7 +374,7 @@
 
             <!--CARDS -->
             <div
-              class="max-[1025px]:overflow-x-auto max-[1025px]:whitespace-nowrap min-[1025px]:flex min-[1025px]:flex-wrap min-[1025px]:justify-center gap-4"
+              class="max-[1025px]:overflow-x-auto  max-[1025px]:whitespace-nowrap min-[1025px]:flex min-[1025px]:flex-wrap min-[1025px]:justify-center gap-4"
             >
               <div class="inline-block w-[400px] h-[500px] mr-5">
                 <div
@@ -1036,6 +1030,7 @@
               <li><a href="#" class="hover:underline">Email</a></li>
               <li><a href="#" class="hover:underline">Phone</a></li>
               <li><a href="#" class="hover:underline">Live Chat</a></li>
+
             </ul>
           </div>
         </div>
